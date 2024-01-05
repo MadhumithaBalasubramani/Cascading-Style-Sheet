@@ -1,0 +1,46 @@
+header{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: black;
+}
+.header-logo img{
+    width: 100%;
+    height: 60px;
+}
+.nav-link{
+    display: grid;
+}
+.nav-link ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav-link ul li{
+    cursor: pointer;
+    list-style: none;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+.nav-link ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: greenyellow;
+    transition: .5s linear;
+}
+.nav-link ul li a:hover:after{
+    width: 100%;
+}
